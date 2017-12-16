@@ -1,0 +1,30 @@
+.todo-box {
+  background: rgba(0,128,0,0.4);
+  padding: 5px;
+  display: flex;
+  input {
+    background: transparent;
+    &[type="button"] {
+      font-size: 24px;
+      line-height: 24px;
+      border: 0;
+      cursor: pointer;
+      color: #333;
+      position: relative;
+      top: 1px;  
+      font-family: "Over Pass", "Times New Roman", serif;     
+    }
+    &[type="text"] {
+      font-size: 18px;
+      color: #333;
+      border: 0;
+      flex-grow: 1;
+      font-family: "Over Pass", "Times New Roman", serif; 
+      font-weight: bold;
+      &::-webkit-input-placeholder {
+        color: #777;
+        font-family: "Over Pass", "Times New Roman", serif; 
+      }
+    }
+  }
+}

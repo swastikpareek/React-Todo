@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"todo-items.css","sourcesContent":[]}
+{"version":3,"sources":["todo-items.css"],"names":[],"mappings":"AAAA;EACE,UAAU;EACV,WAAW;EACX,iBAAiB;CAClB","file":"todo-items.css","sourcesContent":[".todo-box-lists-status-list {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n"]}

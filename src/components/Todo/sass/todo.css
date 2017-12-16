@@ -1,7 +1,30 @@
 .todoblock {
-  max-width: 400px;
-  background: green;
+  width: 500px;
+  background: white;
+  border: 1px solid lightgreen;
+  border-radius: 10px;
   margin: 0 auto;
+  overflow: hidden;
+  font-family: "Over Pass", "Times New Roman", serif;
+}
+
+.todoblock .block-title {
+  background: green;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.todoblock .block-content {
+  background: white;
+  color: green;
+  margin: 0;
+  font-size: 18px;
+  padding: 20px 10px;
+}
+
+.todoblock .todo-box-lists {
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=todo.css.map */

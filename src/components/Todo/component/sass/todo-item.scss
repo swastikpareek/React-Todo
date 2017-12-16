@@ -1,0 +1,16 @@
+.todo-list-item {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s all cubic-bezier(0,0,0,0.4);
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.no-tasks {
+  color: black;
+  padding: 5px 20px;
+  margin: 5px 0;  
+}

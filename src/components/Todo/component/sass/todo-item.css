@@ -1,2 +1,22 @@
+.todo-list-item {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s all cubic-bezier(0, 0, 0, 0.4);
+  transition: 0.2s all cubic-bezier(0, 0, 0, 0.4);
+}
+
+.todo-list-item:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.no-tasks {
+  color: black;
+  padding: 5px 20px;
+  margin: 5px 0;
+}
 
 /*# sourceMappingURL=todo-item.css.map */

@@ -1,2 +1,18 @@
+.todo-box-lists-status-heading {
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.undone-tasks .todo-list-item,
+.undone-tasks .todo-box-lists-status-heading {
+  background: rgba(128, 0, 0, 0.1);
+  color: maroon;
+}
+
+.done-tasks .todo-list-item,
+.done-tasks .todo-box-lists-status-heading {
+  background: rgba(0, 0, 128, 0.1);
+  color: navy;
+}
 
 /*# sourceMappingURL=todo-list.css.map */
