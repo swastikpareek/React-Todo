@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import TodoBox from './Component/todo-box';
-import TodoItem from './Component/todo-item';
+import TodoBox from './component/todo-box';
+import TodoList from './component/todo-list';
+
+import './sass/todo.css';
 
 if(localStorage.getItem('todos') === null ){
   localStorage.setItem('todos', JSON.stringify({
@@ -71,22 +73,12 @@ export default class Todo extends Component {
   render() {
     return (
       <div className="todoblock block">
-        <h2 className="block-title">Todo List Application</h2>
+        <h2 className="block-title">Todo List</h2>
         <div className="block-content">
           <TodoBox onInsertion={this._pushTodo} />
-        </div>
-        <div className="todo-box-lists">
-          <div className="todo-box-lists-status undone-tasks">
-            <h3 className="todo-box-lists-status-heading"> Undone Tasks </h3>
-            <ul className="todo-box-lists-status-list">
-              {this.state.todos.filter((el) => !el.done).length > 0 ? this.state.todos.filter((el) => !el.done).map((t,k) => <TodoItem key={k} todo={t} onUpdate={this._updateState}/>) : <li className="no-tasks"> No Undone tasks </li>}
-            </ul>
-          </div>
-          <div className="todo-box-lists-status done-tasks">
-            <h3 className="todo-box-lists-status-heading"> Done Tasks </h3>
-            <ul className="todo-box-lists-status-list">
-              {this.state.todos.filter((el) => el.done) > 0 ? this.state.todos.filter((el) => el.done).map((t,k) => <TodoItem key={k} todo={t} onUpdate={this._updateState}/>) : <li className="no-tasks"> No Done tasks </li>}
-            </ul>
+          <div className="todo-box-lists">
+            <TodoList items={this.state.todos.filter((el) => !el.done)} classState="undone-tasks" no-result="No undone Tasks" title="Undone Tasks" onUpdate={this._updateState}/>
+            <TodoList items={this.state.todos.filter((el) => el.done)} classState="done-tasks" no-result="No done Tasks" title="Done Tasks" onUpdate={this._updateState}/>
           </div>          
         </div>
       </div>

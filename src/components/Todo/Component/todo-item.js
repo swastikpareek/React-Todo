@@ -1,7 +1,7 @@
+
 import React from 'react';
 
-/*** onUpdate={this._changeState.bind(this, t.key)}, t.value)  
-*/
+import './sass/todo-item.css';
 
 export default class TodoItem extends React.Component {
   constructor(props){
@@ -20,6 +20,3 @@ export default class TodoItem extends React.Component {
     )       
   }
 }
-
-
-
