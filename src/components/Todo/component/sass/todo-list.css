@@ -3,15 +3,21 @@
   margin: 10px 0;
 }
 
+.undone-tasks .todo-list-item {
+  background: rgba(128, 0, 0, 0.1);
+}
+
 .undone-tasks .todo-list-item,
 .undone-tasks .todo-box-lists-status-heading {
-  background: rgba(128, 0, 0, 0.1);
   color: maroon;
+}
+
+.done-tasks .todo-list-item {
+  background: rgba(0, 0, 128, 0.1);
 }
 
 .done-tasks .todo-list-item,
 .done-tasks .todo-box-lists-status-heading {
-  background: rgba(0, 0, 128, 0.1);
   color: navy;
 }
 

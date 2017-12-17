@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {v4} from 'uuid';
 
 import './sass/todo-box.css';
 
@@ -23,6 +24,7 @@ export default class TodoBox extends React.Component {
     const {_todo} = this.refs;
     if(_todo.value.length > 0) {
       this.props.onInsertion({
+        'key': v4(),
         'type': 'task',
         'done': false,
         'value': _todo.value
