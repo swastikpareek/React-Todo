@@ -8,7 +8,7 @@ export default class TodoItems extends React.Component {
   render() {
     return (
       <ul className="todo-box-lists-status-list">
-        {this.props.todos.length > 0 ? this.props.todos.map((t,key) => <TodoItem key={key} todo={t} onUpdate={this.props.onUpdate} onDelete={this.props.onDelete}/>) : <li className="no-tasks"> {this.props['no-result']} </li>}
+        {this.props.todos.length > 0 ? this.props.todos.map((t,key) => <TodoItem key={key} todo={t} onUpdate={this.props.onUpdate} onEdit={this.props.onEdit} onDelete={this.props.onDelete}/>) : <li className="no-tasks"> {this.props['no-result']} </li>}
       </ul>
     )
   }

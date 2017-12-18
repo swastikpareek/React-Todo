@@ -30,6 +30,7 @@
   flex-grow: 1;
   font-family: "Over Pass", "Times New Roman", serif;
   font-weight: bold;
+  padding-left: 20px;
 }
 
 .todo-box input[type="text"]::-webkit-input-placeholder {

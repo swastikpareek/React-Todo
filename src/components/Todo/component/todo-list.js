@@ -9,7 +9,7 @@ export default class TodoList extends React.Component {
     return(
       <div className={"todo-box-lists-status " + this.props.classState} >
         <h3 className="todo-box-lists-status-heading"> {this.props.title} </h3>
-        <TodoItems todos={this.props.items} onUpdate={this.props.onUpdate} onDelete={this.props.onDelete} no-result={this.props['no-result']}/>
+        <TodoItems todos={this.props.items} onUpdate={this.props.onUpdate} onDelete={this.props.onDelete} onEdit={this.props.onEdit} no-result={this.props['no-result']}/>
       </div> 
     )
   }

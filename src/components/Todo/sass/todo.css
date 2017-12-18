@@ -27,4 +27,23 @@
   padding: 10px 0;
 }
 
+.todoblock .clear-all-text {
+  color: #dc9433;
+  font-size: 18px;
+  float: right;
+  padding: 5px 0px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s all cubic-bezier(0, 0, 0, 0.4);
+  transition: 0.2s all cubic-bezier(0, 0, 0, 0.4);
+}
+
+.todoblock .clear-all-text:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=todo.css.map */

@@ -36,8 +36,8 @@ export default class TodoBox extends React.Component {
   render() {
     return (
       <div className="todo-box"> 
-      <input type="button" id="todoBoxInputButtons" placeholder="What you want to do" value="+" onClick={this._addTodo.bind(this)}/>
-        <input type="text" id="todoBoxInputs" ref="_todo" placeholder="What you want to do" onKeyUp={this._onEnterInsert.bind(this)}/>
+      <input type="text" id="todoBoxInputs" ref="_todo" placeholder="What you want to do" onKeyUp={this._onEnterInsert.bind(this)}/>
+      <input type="button" id="todoBoxInputButtons" value="+" onClick={this._addTodo.bind(this)}/>      
       </div>
     )
   }
